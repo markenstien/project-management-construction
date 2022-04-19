@@ -1,0 +1,240 @@
+<?php build('content')?>
+<section class="banner" 
+    style="background: url(/assets/banner.jpg) no-repeat center center; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 80vh;">
+
+
+      <div class="container">
+          <div class="text-center justif" id="bannerHeading">
+              <h3 class="heading-text">Excellence is not our priority, <br>it’s our Standard</h3>
+              <a href="<?php echo _route('quote:projectClassification')?>" class="btn btn-primary">Get Free Quote</a>
+          </div>
+      </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <h4 class="section-title">About</h4>
+        <div class="row">
+            <article class="col-md-8">
+                <p>
+                    PaintMan Construction delivers a one of a kind quality of service in the field of
+                     architectural designs and building construction. With our four major endeavor, namely:
+                    Design, Construct, Painting and Waterproofing, our company has achieved the level of
+                     excellence through the use of state-of-the-art equipment especially for painting and
+                    waterproofing services.
+                </p>
+                <a href="#" class="btn btn-primary btn-sm">Tell me more</a>
+            </article>
+
+            <div class="col-md-4">
+                <img src="<?php echo URL.DS.'assets/about-img.jpg'?>" style='width: 100%;'>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="project">
+    <div class="container">
+        <h4 class="section-title">Projects</h4>
+
+        <div class="row project">
+
+            <div class="col-md-4">
+                <img src="<?php echo URL.DS.'assets/project-a.PNG'?>" style='width: 100%;'>
+            </div>
+
+            <article class="col-md-8">
+                <p>
+                    PaintMan Construction delivers a one of a kind quality of service in the field of
+                     architectural designs and building construction. With our four major endeavor, namely:
+                    Design, Construct, Painting and Waterproofing, our company has achieved the level of
+                     excellence through the use of state-of-the-art equipment especially for painting and
+                    waterproofing services.
+                </p>
+                <a href="#" class="btn btn-primary btn-sm">Show Project</a>
+            </article>
+        </div>
+
+        <div class="row project">
+            <article class="col-md-8">
+                <p>
+                    PaintMan Construction delivers a one of a kind quality of service in the field of
+                     architectural designs and building construction. With our four major endeavor, namely:
+                    Design, Construct, Painting and Waterproofing, our company has achieved the level of
+                     excellence through the use of state-of-the-art equipment especially for painting and
+                    waterproofing services.
+                </p>
+                <a href="#" class="btn btn-primary btn-sm">Show Project</a>
+            </article>
+
+            <div class="col-md-4">
+                <img src="<?php echo URL.DS.'assets/project-b.PNG'?>" style='width: 100%;'>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="partners">
+    <div class="container">
+        <h4 class="section-title">Our Partners</h4>
+        <div class="partners-show-case">
+            <div class="partners-logo">
+                <img src="<?php echo URL.DS.'assets/partners/graco.png'?>">
+            </div>
+            <div class="partners-logo">
+                <img src="<?php echo URL.DS.'assets/partners/hardieflex.PNG'?>">
+            </div>
+            <div class="partners-logo">
+                <img src="<?php echo URL.DS.'assets/partners/davies.PNG'?>">
+            </div>
+            <div class="partners-logo">
+                <img src="<?php echo URL.DS.'assets/partners/moldex.PNG'?>">
+            </div>
+        </div>
+
+        <div class="partners-show-case">
+            <div class="partners-logo">
+                <img src="<?php echo URL.DS.'assets/partners/davco.PNG'?>">
+            </div>
+            <div class="partners-logo">
+                <img src="<?php echo URL.DS.'assets/partners/parex.PNG'?>">
+            </div>
+            <div class="partners-logo">
+                <img src="<?php echo URL.DS.'assets/partners/lanko.PNG'?>">
+            </div>
+            <div class="partners-logo">
+                <img src="<?php echo URL.DS.'assets/partners/boysen.PNG'?>">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contactSection">
+    <div class="container">
+        <h4 class="section-title">Contact US</h4>
+
+        <div class="row">
+            <div class="col-md-5 text-center">
+                <img src="<?php echo URL.DS.'assets/hero.jpg'?>" style="width: 100%;">
+                <p>PaintMan Team Corporate Team <br/>will reach you within 24 hours!</p>
+            </div>
+
+            <div class="col-md-7">
+                <div class="card" id="contactForm">
+                    <div class="card-header">
+                        <h4 class="card-title">Send us a message</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <?php
+                            Form::open([
+                                'method' => 'post',
+                                'action' => _route('mailing:publicBasic' )
+                            ]);
+                        ?>
+
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <?php
+                                    Form::label('Name');
+                                    Form::text('name' , '' , [
+                                        'class' => 'form-control'
+                                    ]);
+                                ?>
+                            </div>
+
+                            <div class="form-group col-sm-12">
+                                <?php
+                                    Form::label('Email');
+                                    Form::text('email' , '' , [
+                                        'class' => 'form-control'
+                                    ]);
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <?php
+                                Form::label('Message');
+                                Form::textarea('message' , '' , [
+                                    'class' => 'form-control',
+                                    'rows'  => 5
+                                ]);
+                            ?>
+                        </div>
+
+                        <div class="form-group">
+                            <?php 
+                                Form::submit('' , 'Send Message' , [
+                                    'class' => 'btn btn-primary btn-block'
+                                ]);
+                            ?>
+                        </div>
+                        <?php Form::close()?></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<?php endbuild()?>
+
+
+<?php build('headers')?>
+    <style type="text/css">
+        #bannerHeading{
+            text-align: center;
+            height: 100%;
+            height: 80vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bannerHeading .heading-text
+        {
+            color: #fff;
+            font-size: 2.3em;
+            margin-bottom: 50px;
+        }
+
+        #project div.project
+        {
+            margin-bottom: 100px;
+        } 
+
+        #partners
+        {
+            background: #E5E5E5;
+        }
+
+        .partners-show-case {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .partners-show-case .partners-logo
+        {
+            width: 150px;
+            max-height: 100px;
+            margin: 30px;
+        }
+
+        .partners-show-case .partners-logo img 
+        {
+            width: 100%;
+        }
+    </style>
+<?php endbuild()?>
+<?php loadTo('tmp/public')?>

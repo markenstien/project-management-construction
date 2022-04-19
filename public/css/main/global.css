@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+.card-header{
+	border-bottom: 1px solid #eee;
+}
+
+
+.table{
+	color: #000 !important;
+}	
+
+.table td{
+	color: #000 !important;
+}
+
+.table thead th{
+	font-weight: bold !important;
+}
+
+
+.form-control{
+	border:  1px solid #000;
+}
+
+.form-section{
+	/*border: 1px solid #000;*/
+	margin: 30px 0px;
+}
+
+.form-control{
+	border:  1px solid #000;
+}
+
+
+.form-section .form-section-title
+{
+	font-size: .98em;
+	font-weight: bold;
+}
+
+.section{
+	margin: 40px 0px;
+}
