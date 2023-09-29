@@ -36,7 +36,7 @@
         <h4 class="section-title">Why Choose us?</h4>
         <article>
             <p>
-                PaintMan Construction delivers a one of a kind quality of service in the field of
+                <?php echo COMPANY_NAME?> Construction delivers a one of a kind quality of service in the field of
                 architectural designs and building construction. With our four major endeavor, namely:
                 Design, Construct, Painting and Waterproofing, our company has achieved the level of
                 excellence through the use of state-of-the-art equipment especially for painting and
@@ -48,14 +48,14 @@
             <p>
                 With our wide sources of construction supplies, technical knowledge and supports,
                 highly skilled structural and field engineers, design and development architects,
-                PaintMan Construction makes it easier to design, construct, paint and waterproof a
+                <?php echo COMPANY_NAME?> Construction makes it easier to design, construct, paint and waterproof a
                 particular construction project.
             </p>
         </article>
 
         <article>
             <p>
-                Furthermore, PaintMan Construction has sufficient staff that can handle all the fields of
+                Furthermore, <?php echo COMPANY_NAME?> Construction has sufficient staff that can handle all the fields of
                 construction. From plumbing and sanitation, electrical and mechanical works, civil works,
                 fabrications, interior designs and architectural fit-outs, tiling, architectural and decorative
                 coating and our line of specialization; painting and waterproofing which we utilized Airless

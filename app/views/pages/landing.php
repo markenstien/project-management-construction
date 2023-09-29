@@ -10,7 +10,7 @@
 
       <div class="container">
           <div class="text-center justif" id="bannerHeading">
-              <h3 class="heading-text">Excellence is not our priority, <br>it’s our Standard</h3>
+              <h3 class="heading-text">Construction Project/Task Management<br>(Chromatic Softwares)</h3>
               <a href="<?php echo _route('quote:projectClassification')?>" class="btn btn-primary">Get Free Quote</a>
           </div>
       </div>
@@ -23,11 +23,9 @@
         <div class="row">
             <article class="col-md-8">
                 <p>
-                    PaintMan Construction delivers a one of a kind quality of service in the field of
-                     architectural designs and building construction. With our four major endeavor, namely:
-                    Design, Construct, Painting and Waterproofing, our company has achieved the level of
-                     excellence through the use of state-of-the-art equipment especially for painting and
-                    waterproofing services.
+                Generate Lorem Ipsum placeholder text for use in your graphic, 
+                print and web layouts, and discover plugins for your favorite writing, design and blogging tools. E
+                xplore the origins, history and meanin
                 </p>
                 <a href="#" class="btn btn-primary btn-sm">Tell me more</a>
             </article>
@@ -51,11 +49,12 @@
 
             <article class="col-md-8">
                 <p>
-                    PaintMan Construction delivers a one of a kind quality of service in the field of
-                     architectural designs and building construction. With our four major endeavor, namely:
-                    Design, Construct, Painting and Waterproofing, our company has achieved the level of
-                     excellence through the use of state-of-the-art equipment especially for painting and
-                    waterproofing services.
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
+                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
                 </p>
                 <a href="#" class="btn btn-primary btn-sm">Show Project</a>
             </article>
@@ -63,12 +62,10 @@
 
         <div class="row project">
             <article class="col-md-8">
-                <p>
-                    PaintMan Construction delivers a one of a kind quality of service in the field of
-                     architectural designs and building construction. With our four major endeavor, namely:
-                    Design, Construct, Painting and Waterproofing, our company has achieved the level of
-                     excellence through the use of state-of-the-art equipment especially for painting and
-                    waterproofing services.
+                <p
+                >Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                 Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
                 </p>
                 <a href="#" class="btn btn-primary btn-sm">Show Project</a>
             </article>
@@ -123,7 +120,7 @@
         <div class="row">
             <div class="col-md-5 text-center">
                 <img src="<?php echo URL.DS.'assets/hero.jpg'?>" style="width: 100%;">
-                <p>PaintMan Team Corporate Team <br/>will reach you within 24 hours!</p>
+                <p>MonsterThesis Team <br/>will reach you within 24 hours!</p>
             </div>
 
             <div class="col-md-7">

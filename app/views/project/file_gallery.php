@@ -18,7 +18,6 @@
 		<?php Flash::show('folderAlert')?>
 		<a href="<?php echo _route('project:show' , $project->id) ?>">Return</a>
 		<?php if( isset($folderFilesAndFolders) ) :?>
-			
 			<section class="section">
 				<h4>Photos</h4>
 				<div class="row">

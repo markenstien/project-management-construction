@@ -41,7 +41,7 @@
 
     define('SITE_NAME' , 'paintmanconstruction.com');
 
-    define('COMPANY_NAME' , 'M_THESIS_PROJECT_MANAGEMENT');
+    define('COMPANY_NAME' , 'PROJECT_MANAGEMENT');
 
     define('KEY_WORDS' , '#############');
 

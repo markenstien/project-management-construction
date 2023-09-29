@@ -24,7 +24,7 @@
 
         case 'local':
 
-            define('URL' , 'http://th.paintman');
+            define('URL' , 'http://dev.projmanagement');
 
             define('DBVENDOR' , 'mysql');
 
@@ -34,7 +34,7 @@
 
             define('DBPASS' , '');
 
-            define('DBNAME' , 'th_paintman');
+            define('DBNAME' , 'th_projman');
 
 
 

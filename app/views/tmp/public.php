@@ -87,23 +87,21 @@
                 <div class="col">
                    <div class="footer-group">
                         <h3 class="footer-title"><?php echo COMPANY_NAME?></h3>
-                        <p>Zone 5, Gimenez Park Subdivision, Conception Pequena, Naga City</p>
+                        <p>raw denim aesthetic synth nesciunt you probably City</p>
                    </div>
 
                     <ul class="list-unstyled">
                         <li> <strong>Contacts</strong></li>
-                        <li>054 881 2109</li>
-                        <li>+639465212272</li>
-                        <li>+639274436145</li>
+                        <li>+631231230000</li>
+                        <li>+631231230000</li>
                     </ul>
                 </div>
 
                 <div class="col">
                     <div class="footer-group">
                         <h3 class="footer-title">Services</h3>
-                        <p>Creates design and develop construction
-                        plans, construct buildings & other structures,
-                        provides painting and waterproofing services.</p>
+                        <p>. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of 
+                          them accusamus labore sustainable</p>
                     </div>
                 </div>
 
