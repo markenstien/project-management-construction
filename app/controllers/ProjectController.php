@@ -112,9 +112,8 @@
 			}
 
 
-			$type = 'no_quotation';
+			// $type = 'no_quotation';
 			$userModel = model('UserModel');
-
 			$customers = $userModel->getCustomers();
 
 			$data = [
@@ -123,51 +122,50 @@
 			];
 
 
-			if($quotation)
-			{
-				$cost = 0;
-				$budget = 0;
-				$maxBudget = 0;
-				$classification = null;
-				$type = null;
-				$address = null;
-				$landmark = null;
+			// if($quotation)
+			// {
+			// 	$cost = 0;
+			// 	$budget = 0;
+			// 	$maxBudget = 0;
+			// 	$classification = null;
+			// 	$type = null;
+			// 	$address = null;
+			// 	$landmark = null;
 
 
+			// 	/*get project cost by sectors*/
 
-				/*get project cost by sectors*/
+			// 	$sectors = $quotation->meta_values->SECTORS;
+			// 	$size = $quotation->meta_values->SIZE;
+			// 	$classificationGroup = $quotation->meta_values->CLASSIFICATION;
+			// 	$addressGroup = $quotation->meta_values->ADDRESS;
 
-				$sectors = $quotation->meta_values->SECTORS;
-				$size = $quotation->meta_values->SIZE;
-				$classificationGroup = $quotation->meta_values->CLASSIFICATION;
-				$addressGroup = $quotation->meta_values->ADDRESS;
+			// 	// dd($quotation);
 
-				// dd($quotation);
+			// 	foreach($sectors as $key => $sector) {
+			// 		$cost += $sector->cost;
+			// 	}	
 
-				foreach($sectors as $key => $sector) {
-					$cost += $sector->cost;
-				}	
+			// 	$classification = $classificationGroup->classification;
+			// 	$type = $classificationGroup->type;
 
-				$classification = $classificationGroup->classification;
-				$type = $classificationGroup->type;
+			// 	$address = $addressGroup->address;
+			// 	$landmark = $addressGroup->landmark;
 
-				$address = $addressGroup->address;
-				$landmark = $addressGroup->landmark;
+			// 	$budget = toMoney($cost - ($cost * .50));
+			// 	$maxBudget = toMoney($cost - ($cost * .30));
+			// 	$cost = toMoney($cost);
 
-				$budget = toMoney($cost - ($cost * .50));
-				$maxBudget = toMoney($cost - ($cost * .30));
-				$cost = toMoney($cost);
+			// 	$storey = $size->storey;
+			// 	$sqm    = $size->size;
 
-				$storey = $size->storey;
-				$sqm    = $size->size;
-
-				$data['quotation'] = compact([
-					'cost','budget','maxBudget',
-					'classification', 'type',
-					'address' , 'landmark',
-					'storey' , 'sqm'
-				]); 
-			}
+			// 	$data['quotation'] = compact([
+			// 		'cost','budget','maxBudget',
+			// 		'classification', 'type',
+			// 		'address' , 'landmark',
+			// 		'storey' , 'sqm'
+			// 	]); 
+			// }
 
 			return $this->view('project/create' , $data);
 		}
@@ -210,7 +208,7 @@
 			*/
 			if( isSubmitted() || request()->input('isPost') )
 			{
-				$quotation = $this->isQuotationCreate();
+				// $quotation = $this->isQuotationCreate();
 
 				$req = request();
 
@@ -226,11 +224,11 @@
 					return redirect()->return();
 				}
 
-				if($quotation)
-				{
-					$project = $this->project->get($projectId);
-					return redirect( _route('project:addSectors' , ['reference' => $project->reference]) );
-				}
+				// if($quotation)
+				// {
+				// 	$project = $this->project->get($projectId);
+				// 	return redirect( _route('project:addSectors' , ['reference' => $project->reference]) );
+				// }
 				return redirect( _route('project:show' , $projectId) );
 			}
 
@@ -352,18 +350,11 @@
 		public function show($id)
 		{
 			$project = $this->project->get($id);
-
 			$projectSectors = $this->project->getSectors( $id );
-
 			$expenses = $this->project->getExpenses( $id );
-
 			$workers = $this->project->getWorkers($id);
-
 			$progress = $this->loadProgress($id);
-
-
 			$expensesModel = model('ExpensesModel');
-				
 			$total = $expensesModel->getTotal($id);
 
 			$data = [

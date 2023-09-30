@@ -119,7 +119,8 @@
     function mProjectClassifications()
     {
         return [
-            'Residential' , 'Commercial'
+            'Armored Car' , 'Trailer Truck',
+            'Elf Customed'
         ];
     }
 

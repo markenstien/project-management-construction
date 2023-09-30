@@ -26,6 +26,17 @@
 						?>
 					</div>
 
+					<div class="form-group">
+						<?php
+							Form::label('Project Description');
+							Form::textarea('description' , '' , [
+								'class' => 'form-control',
+								'rows'  => 3,
+								'required' => ''
+							]);
+						?>
+					</div>
+
 					<div class="form-section">
 						<h3 class="form-section-title">Budget and Costing</h3>
 						<div class="form-group">
@@ -87,8 +98,6 @@
 
 
 					<div class="form-section">
-						<h3 class="form-section-title">Size And Location</h3>
-
 						<div class="form-group">
 							<div class="row">
 								<div class="col">
@@ -112,55 +121,17 @@
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="form-group">
-							<div class="row">
-								<div class="col">
-									<?php
-										Form::label('Storey / No. of floors');
-										Form::text('storey', $quotation['storey'] ?? '' , [
-											'class' => 'form-control'	,
-											'required' => ''
-										]);
-									?>
-								</div>
-
-								<div class="col">
-									<?php
-										Form::label('SQM');
-										Form::text('sqm', $quotation['sqm'] ?? '' , [
-											'class' => 'form-control',
-											'required' => ''	
-										]);
-									?>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="row">
-								<div class="col">
-									<?php
-										Form::label('Address');
-										Form::textarea('address' , $quotation['address'] ?? ''  , [
-											'class' => 'form-control',
-											'rows'  => 3,
-											'required' => ''
-										]);
-									?>
-								</div>
-
-								<!-- <div class="col">
-									<?php
-										Form::label('Landmark');
-										Form::text('landmark' , $quotation['landmark'] ?? '' , [
-											'class' => 'form-control',
-											'rows'  => 3
-										]);
-									?>
-								</div> -->
-							</div>
-						</div>
+					<div class="form-group">
+						<?php
+							Form::label('Address');
+							Form::textarea('address' , $quotation['address'] ?? ''  , [
+								'class' => 'form-control',
+								'rows'  => 3,
+								'required' => ''
+							]);
+						?>
 					</div>
 
 					<div class="form-group">

@@ -53,23 +53,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo _route('landing:about')?>">About</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo _route('landing:services')?>">Services</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo _route('landing:portfolio')?>">Portfolio</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo _route('landing:contact' , null , ['page'=>'contact#contactForm'])?>">Contact</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo _route('sec:login')?>">Sign In</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn btn-primary" 
-                href="<?php echo _route('quote:projectClassification')?>">
-                    <strong>Quotation</strong>
-                </a>
               </li>
             </ul>
         </div>

@@ -10,8 +10,6 @@
 
 			<div class="card-body">
 
-				
-
 				<?php
 					Form::open([
 						'method' => 'post',
@@ -26,6 +24,16 @@
 							Form::text('title' , $project->title , [
 								'class' => 'form-control',
 								'placeholder' => 'Enter Project Title'
+							]);
+						?>
+					</div>
+
+					<div class="form-group">
+						<?php
+							Form::label('Description');
+							Form::textarea('description' , $project->description  , [
+								'class' => 'form-control',
+								'rows'  => 3
 							]);
 						?>
 					</div>
@@ -95,7 +103,7 @@
 								<div class="col">
 									<?php
 										Form::label('Classification');
-										Form::select('classification' , ['Residence' , 'Commercial'] , $project->classification , [
+										Form::select('classification' , mProjectClassifications() , $project->classification , [
 											'class' => 'form-control'
 										]);
 									?>
@@ -104,59 +112,23 @@
 								<div class="col">
 									<?php
 										Form::label('Type');
-										Form::select('type' , ['maintenance' => 'Maintenance / Renovation' , 'state_clean' => 'State Clean / New Project'] , $project->type , [
+										Form::select('type' , mProjectTypes() , $project->type , [
 											'class' => 'form-control'
 										]);
 									?>
 								</div>
 							</div>
 						</div>
-
-						<div class="form-group">
-							<div class="row">
-								<div class="col">
-									<?php
-										Form::label('Storey / No. of floors');
-										Form::text('storey',  $project->storey , [
-											'class' => 'form-control'	
-										]);
-									?>
-								</div>
-
-								<div class="col">
-									<?php
-										Form::label('SQM');
-										Form::text('sqm', $project->sqm , [
-											'class' => 'form-control'	
-										]);
-									?>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="row">
-								<div class="col">
-									<?php
-										Form::label('Address');
-										Form::textarea('address' , $project->address  , [
-											'class' => 'form-control',
-											'rows'  => 3
-										]);
-									?>
-								</div>
-
-								<!-- <div class="col">
-									<?php
-										Form::label('Landmark');
-										Form::text('landmark' , $project->landmark , [
-											'class' => 'form-control',
-											'rows'  => 3
-										]);
-									?>
-								</div> -->
-							</div>
-						</div>
+					</div>
+					
+					<div class="form-group">
+						<?php
+							Form::label('Address');
+							Form::textarea('address' , $project->address  , [
+								'class' => 'form-control',
+								'rows'  => 3
+							]);
+						?>
 					</div>
 
 					<div class="form-group">

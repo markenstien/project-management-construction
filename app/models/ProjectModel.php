@@ -28,7 +28,6 @@
 		public function create($project)
 		{
 			extract($project);
-
 			$reference = $this->generateReference();
 
 			$res = parent::store([
@@ -41,9 +40,9 @@
 				'est_completion_date' => $est_completion_date,
 				'type' => $type,
 				'classification' => $classification,
-				'storey' => $storey,
 				'sqm'    => $sqm,
-				'address' => $address
+				'address' => $address,
+				'description' => $description
 			]);
 
 			if( !$res ){
@@ -53,7 +52,7 @@
 
 			$this->addMessage("Project {$title} has been created!");
 
-			$this->setInstance( parent::get($res) );
+			$this->setInstance(parent::get($res));
 			return $res;
 		}
 

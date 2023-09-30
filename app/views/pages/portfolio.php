@@ -14,23 +14,21 @@
 </section>
 
 <?php
-    $worksSamples = [
-        'one' , 'two' , 'three' , 
-        'four' , 'five' , 'six'
-    ];
+    $worksSamples = scandir(BASE_DIR.DS.'public/assets/projects');
 ?>
 <section class="section">
     <h4 class="section-title">Some of our best paint works!</h4>
     <div class="container">
         <div class="row">
-            <?php foreach( $worksSamples as $work) :?>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="<?php echo URL.DS.'assets/projects/'.$work.'.PNG'?>">
+            <?php foreach($worksSamples as $work) :?>
+                <?php if(isEqual($work, ['.','...']) || is_dir($work)) continue?>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="<?php echo _path_asset('projects/'.$work)?>" style="width:100%">
+                        </div>
                     </div>
                 </div>
-            </div>
             <?php endforeach?>
         </div>
     </div>

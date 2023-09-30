@@ -36,10 +36,8 @@
 								<td><?php echo $user->password?></td>
 								<td>
 									<a href="<?php echo _route('user:overview' , $user->id)?>" class="btn btn-primary btn-sm">Show</a>
-
 									<a href="<?php echo _route('profile:index' , $user->id)?>" class="btn btn-primary btn-sm">Edit</a>
-
-									<a href="<?php echo _route('user:sendAuthToEmail' , $user->id)?>" class="btn btn-info btn-sm">Send Auth</a>
+									<!-- <a href="<?php echo _route('user:sendAuthToEmail' , $user->id)?>" class="btn btn-info btn-sm">Send Auth</a> -->
 								</td>
 							</tr>
 						<?php endforeach?>

@@ -51,9 +51,9 @@
                                         ?>
                                     </div>
 
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <a href="/ForgetPasswordController/index">Forget password</a>
-                                    </div>                         
+                                    </div>                          -->
                                   <button type="submit" class="btn btn-success btn-lg btn-block font-18">Sign in</button>
                                 <?php Form::close()?>
                             </div>

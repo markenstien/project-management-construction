@@ -76,22 +76,22 @@
                             <?php if(!$isCustomer) :?>
                             <li>
                                 <a href="<?php echo _route('projectSector:index')?>">
-                                     <i class="feather icon-package"></i><span>Project Sector</span>
+                                     <i class="feather icon-package"></i><span>Categories</span>
                                     <!-- <span class="badge badge-success pull-right">New</span> -->
                                 </a>
                             </li> 
 
-                            <li>
+                            <!-- <li>
                                 <a href="<?php echo _route('quote:index')?>">
                                      <i class="feather icon-clipboard"></i><span>Quotation</span>
-                                    <!-- <span class="badge badge-success pull-right">New</span> -->
+                                    <span class="badge badge-success pull-right">New</span>
                                 </a>
-                            </li>
+                            </li> -->
 
                             <li>
                                 <a href="<?php echo _route('user:index')?>">
                                      <i class="feather icon-users"></i><span>Accounts</span>
-                                    <!-- <span class="badge badge-success pull-right">New</span> -->
+                                    <span class="badge badge-success pull-right">New</span>
                                 </a>
                             </li> 
                             <?php endif?>

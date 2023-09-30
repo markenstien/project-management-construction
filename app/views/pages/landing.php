@@ -10,8 +10,8 @@
 
       <div class="container">
           <div class="text-center justif" id="bannerHeading">
-              <h3 class="heading-text">Construction Project/Task Management<br>(Chromatic Softwares)</h3>
-              <a href="<?php echo _route('quote:projectClassification')?>" class="btn btn-primary">Get Free Quote</a>
+              <h3 class="heading-text"><?php echo COMPANY_NAME?> <br/> Project Management Software</h3>
+              <!-- <a href="<?php echo _route('quote:projectClassification')?>" class="btn btn-primary">Get Free Quote</a> -->
           </div>
       </div>
 </section>
@@ -31,7 +31,7 @@
             </article>
 
             <div class="col-md-4">
-                <img src="<?php echo URL.DS.'assets/about-img.jpg'?>" style='width: 100%;'>
+                <img src="<?php echo _path_upload_get('images_asset/IMG-7651.JPG')?>" style='width: 100%;'>
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
         <div class="row project">
 
             <div class="col-md-4">
-                <img src="<?php echo URL.DS.'assets/project-a.PNG'?>" style='width: 100%;'>
+                <img src="<?php echo _path_upload_get('images_asset/IMG-7641.JPG')?>" style='width: 100%;'>
             </div>
 
             <article class="col-md-8">
@@ -71,14 +71,14 @@
             </article>
 
             <div class="col-md-4">
-                <img src="<?php echo URL.DS.'assets/project-b.PNG'?>" style='width: 100%;'>
+                <img src="<?php echo _path_upload_get('images_asset/IMG-7639.JPG')?>" style='width: 100%;'>
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="section" id="partners">
+<!-- <section class="section" id="partners">
     <div class="container">
         <h4 class="section-title">Our Partners</h4>
         <div class="partners-show-case">
@@ -180,7 +180,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <?php endbuild()?>
 
 

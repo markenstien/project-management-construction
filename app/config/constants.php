@@ -41,7 +41,7 @@
 
     define('SITE_NAME' , 'paintmanconstruction.com');
 
-    define('COMPANY_NAME' , 'PROJECT_MANAGEMENT');
+    define('COMPANY_NAME' , 'PRADO AND SONS INDUSTRIES');
 
     define('KEY_WORDS' , '#############');
 

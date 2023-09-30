@@ -28,17 +28,6 @@
 
 			<div class="form-group">
 				<?php
-					Form::label('Price Per SQMTR');
-					Form::text('price_per_sqmtr' , $projectSector->price_per_sqmtr , [
-						'class' => 'form-control',
-						'required' => ''
-					]);
-					Form::small('For Automated Quotation Purposes..');
-				?>
-			</div>
-
-			<div class="form-group">
-				<?php
 					Form::label('Description');
 					Form::textarea('description' , $projectSector->description ,[
 						'class' => 'form-control',

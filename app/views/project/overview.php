@@ -28,6 +28,21 @@
 					</tr>
 
 					<tr>
+						<td>Address</td>
+						<td><?php echo $project->description?></td>
+					</tr>
+
+					<tr>
+						<td>Classification</td>
+						<td><?php echo $project->classification?></td>
+					</tr>
+
+					<tr>
+						<td>Type</td>
+						<td><?php echo $project->type?></td>
+					</tr>
+
+					<tr>
 						<td><strong>Budget And Costing</strong></td>
 					</tr>
 
@@ -60,19 +75,6 @@
 					<tr>
 						<td>Estimated Completion Date</td>
 						<td><?php echo $project->est_completion_date?></td>
-					</tr>
-
-					<tr>
-						<td><strong>Size And Location</strong></td>
-					</tr>
-
-					<tr>
-						<td>Storey</td>
-						<td><?php echo $project->storey?> storeys</td>
-					</tr>
-					<tr>
-						<td>SQM</td>
-						<td><?php echo $project->sqm?> SQM</td>
 					</tr>
 					<tr>
 						<td>Address</td>

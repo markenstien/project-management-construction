@@ -4,7 +4,7 @@
 	{
 		$size = $parameters['size'] ?? '100%';
 		$margin = $parameters['margin'] ?? '15px 0px';
-		$image = 'https://scontent.fmnl2-2.fna.fbcdn.net/v/t39.30808-6/302442644_484926753644709_2557463851700756466_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gQMMxZai2-IAX-EThz3&_nc_ht=scontent.fmnl2-2.fna&oh=00_AfC5mYeVYH5Psp_nugZNH8NFwOqAi7tutxdvN0vIOBzvig&oe=635FFBC5';
+		$image = _path_asset('logo.png');
 		
 		print <<<EOF
 			<div style='{$margin}'>

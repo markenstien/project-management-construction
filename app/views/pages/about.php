@@ -18,14 +18,16 @@
         <div class="row">
             <div class="text-center col">
                 <h3>Mission</h3>
-                <p>“To become one of the ideal and reliable construction company serving our valued customers with integrity, transparency and truthfulness”</p>
+                <p>“Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, 
+                    and discover plugins for your favorite writing, design and blogging tools. 
+                    E xplore the origins, history and meanin”</p>
             </div>
             <br>
             <div class="text-center col">
                 <h3>Vission</h3>
-                <p>To achieve the highest level of customer satisfaction as we continue designing dreams,
-                building futures and above all a God-fearing company as we strive hard in reaching our
-                goal, “Excellence is not our priority, it’s our Standard”.</p>
+                <p>"Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, 
+                    raw denim aesthetic synth nesciunt you probably haven't 
+                    heard of them accusamus labore sustainable VHS.”.</p>
             </div>
         </div>
     </div>
@@ -46,20 +48,19 @@
 
         <article>
             <p>
-                With our wide sources of construction supplies, technical knowledge and supports,
-                highly skilled structural and field engineers, design and development architects,
-                <?php echo COMPANY_NAME?> Construction makes it easier to design, construct, paint and waterproof a
-                particular construction project.
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                Food truck quinoa nesciunt laborum eiusmod. 
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
             </p>
         </article>
 
         <article>
             <p>
-                Furthermore, <?php echo COMPANY_NAME?> Construction has sufficient staff that can handle all the fields of
-                construction. From plumbing and sanitation, electrical and mechanical works, civil works,
-                fabrications, interior designs and architectural fit-outs, tiling, architectural and decorative
-                coating and our line of specialization; painting and waterproofing which we utilized Airless
-                Spray-Painting Machine to hasten the time of finishing.
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee 
+                nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
             </p>
         </article>
     </div>

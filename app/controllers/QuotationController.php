@@ -39,7 +39,7 @@
 
 		public function projectClassification()
 		{
-			if( isSubmitted() )
+			if(isSubmitted())
 			{
 				$post = request()->posts();
 
@@ -57,12 +57,11 @@
 
 		public function projectSize()
 		{
-			if( isSubmitted() )
+			if(isSubmitted())
 			{
-
 				$post = request()->posts();
 
-				if( !is_numeric($post['size']) || !is_numeric( $post['storey'] ) )
+				if(!is_numeric($post['size']) || !is_numeric($post['storey']))
 				{
 					Flash::set("Size or storey field must be a valid number" , 'danger');
 					return request()->return();

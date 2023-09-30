@@ -34,7 +34,6 @@
 
 				$res = $this->projectSector->store([
 					'sector' => $sector,
-					'price_per_sqmtr' => $price_per_sqmtr,
 					'description' => $description,
 				]);
 
@@ -66,7 +65,6 @@
 				$this->projectSector->update([
 					'sector' => $sector,
 					'description' => $description,
-					'price_per_sqmtr' => $price_per_sqmtr
 				] , $id);
 			}
 			$sector = $this->projectSector->get($id);
