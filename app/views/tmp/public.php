@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title><?php echo $title ?? ''?><?php echo '|'.COMPANY_NAME ?></title>
     <!-- Fevicon -->
-    <link rel="shortcut icon" href="<?php echo URL.DS.'/assets/mthesis.jpg'?>">
+    <link rel="shortcut icon" href="<?php echo _path_asset('logo.png')?>">
     <!-- Start css -->
     <link href="<?php echo _path_tmp('css/bootstrap.min.css')?>" rel="stylesheet" type="text/css">
     <link href="<?php echo _path_tmp('css/icons.css')?>" rel="stylesheet" type="text/css">
