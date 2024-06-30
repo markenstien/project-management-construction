@@ -8,7 +8,7 @@
       height: 40vh;">
       <div class="container">
           <div class="text-center justif" id="bannerHeading">
-              <h3 class="heading-text">Out Portfolio</h3>
+              <h3 class="heading-text">Our Portfolio</h3>
           </div>
       </div>
 </section>

@@ -13,6 +13,7 @@
                         <th>Amount</th>
                         <th>Budget</th>
                         <th>Max Budget</th>
+                        <th><span title="Budget Percentage (Amount % Budget)">Budg%</span></th>
                         <th>Sector</th>
                         <th>Description</th>
                         <th>Action</th>
@@ -21,12 +22,22 @@
                     <tbody>
                         <?php $total = 0?>
                         <?php foreach($expenses as $expense) :?>
-                            <?php $total += $expense->amount;?>
+                            <?php 
+                                $total += $expense->amount;
+                                $percentage = ($expense->amount / $expense->budget) * 100;
+                            ?>
                             <tr>
                                 <td><?php echo $expense->expenses?></td>
                                 <td><?php echo toMoney($expense->amount)?></td>
                                 <td><?php echo toMoney($expense->budget)?></td>
                                 <td><?php echo toMoney($expense->max_budget)?></td>
+                                <td>
+                                    <?php if(($percentage) > 100) : ?>
+                                        <span class="badge badge-danger" style="over budget"> <?php echo $percentage.'%'?>Over Budg.</span>
+                                    <?php else:?>
+                                        <span class="badge badge-success"> <?php echo $percentage.'%'?> Good</span>
+                                    <?php endif?>
+                                </td>
                                 <td><?php echo $expense->sector?></td>
                                 <td>
                                     <p style="width:350px"><?php echo $expense->description?></p>

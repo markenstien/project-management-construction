@@ -18,16 +18,22 @@
         <div class="row">
             <div class="text-center col">
                 <h3>Mission</h3>
-                <p>“Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, 
-                    and discover plugins for your favorite writing, design and blogging tools. 
-                    E xplore the origins, history and meanin”</p>
+                <p>Our mission is to design and build state-of-the-art trucks that set the benchmark for
+                    quality, durability, and innovation. We strive to exceed our customers&#39; expectations by
+                    delivering superior vehicles that enhance their business operations and provide
+                    exceptional value. Through cutting-edge technology, rigorous engineering standards,
+                    and a commitment to sustainability, we aim to be the preferred choice for truck
+                    manufacturing worldwide.</p>
             </div>
             <br>
             <div class="text-center col">
-                <h3>Vission</h3>
-                <p>"Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, 
-                    raw denim aesthetic synth nesciunt you probably haven't 
-                    heard of them accusamus labore sustainable VHS.”.</p>
+                <h3>Vision</h3>
+                <p>Our vision is to lead the truck manufacturing industry by pioneering advancements in
+                vehicle design, safety, and environmental sustainability. We aspire to be recognized
+                globally for our excellence in engineering and our dedication to producing trucks that not
+                only meet but surpass industry standards. By fostering a culture of continuous
+                improvement and customer focus, we envision a future where our trucks drive the
+                success and growth of businesses around the world.</p>
             </div>
         </div>
     </div>
@@ -38,29 +44,31 @@
         <h4 class="section-title">Why Choose us?</h4>
         <article>
             <p>
-                <?php echo COMPANY_NAME?> Construction delivers a one of a kind quality of service in the field of
-                architectural designs and building construction. With our four major endeavor, namely:
-                Design, Construct, Painting and Waterproofing, our company has achieved the level of
-                excellence through the use of state-of-the-art equipment especially for painting and
-                waterproofing services.
+                <?php echo COMPANY_NAME?>Prado and Sons Inc. is a leader in the design and production of high-performance
+                trucks. Our company prides itself on blending innovation with durability to create
+                vehicles that meet the diverse needs of our clients. With a strong commitment to
+                excellence, we ensure that each truck we produce upholds the highest standards of
+                quality and reliability.
             </p>
         </article>
 
         <article>
             <p>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-                3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                Food truck quinoa nesciunt laborum eiusmod. 
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            At Prado and Sons, we utilize cutting-edge technology and rigorous engineering
+            processes to build trucks that set new benchmarks in the industry. Our team of skilled
+            professionals works tirelessly to incorporate the latest advancements into our designs,
+            ensuring that our vehicles are not only efficient but also environmentally friendly. We
+            believe that innovation and sustainability go hand in hand, driving us to continuously
+            improve our manufacturing practices.
             </p>
         </article>
 
         <article>
             <p>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee 
-                nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
+                Customer satisfaction is at the heart of everything we do. From initial design to final
+                    delivery, we prioritize the needs of our clients, offering tailored solutions that enhance
+                    their business operations. At Prado and Sons, we provide unparalleled service and
+                    support, ensuring that our trucks drive your success and growth.
             </p>
         </article>
     </div>

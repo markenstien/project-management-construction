@@ -13,8 +13,11 @@
 		{
 			authRequired();
 
-			$users = $this->user->all( null , "FIELD(type, 'customer' , 'management') asc");
+			if(isEqual(whoIs('type'), 'customer')) {
+				return redirect('DashboardController');
+			}
 
+			$users = $this->user->all( null , "FIELD(type, 'customer' , 'management') asc");
 			$data = [
 				'title' => 'Users',
 				'users' => $users

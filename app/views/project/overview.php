@@ -8,7 +8,7 @@
 				<h2><?php echo $currentProgress->current ?? 0?>%</h2>
 
 				<?php if( mIsManagement() ):?>
-					<h2>Expenses : <?php echo $expensesTotal?></h2>
+					<h2>Expenses : <?php echo toMoney($expensesTotal)?></h2>
 					<table class="table table-bordered">
 						<td>Budget</td>
 						<td>Expenses</td>

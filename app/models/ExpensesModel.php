@@ -4,8 +4,6 @@
 	{
 		public $table = 'expenses';
 
-
-
 		public function store($expensesData)
 		{
 			extract($expensesData);
@@ -60,7 +58,14 @@
 
 		public function update($expenses , $id)
 		{
-			dd($expenses);
+			return parent::update([
+				'expenses' => $expenses['expenses'],
+				'sector_id' => $expenses['sector_id'],
+				'amount'   => $expenses['amount'],
+				'budget'   => $expenses['budget'],
+				'max_budget' => $expenses['max_budget'],
+				'description'  => $expenses['description']
+			], $id);
 		}
 
 		public function getTotal($projectId)

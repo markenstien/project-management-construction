@@ -31,7 +31,7 @@
 
 			<div class="form-group">
 				<?php
-					Form::label('Price Per SQMTR');
+					Form::label('Price Per meter');
 					Form::text('price_per_sqmtr' , '' , [
 						'class' => 'form-control',
 						'required' => ''

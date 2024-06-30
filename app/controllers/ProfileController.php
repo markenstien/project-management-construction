@@ -21,12 +21,16 @@
 			{
 				$user = $this->userModel->get( $this->auth->id );
 			}
-			
 
 			$data = [
 				'title' => 'Profile',
-				'user'  => $user
+				'user'  => $user,
+				'isOwnerAuth' => false
 			];
+
+			if(whoIs('id') == $user->id) {
+				$data['isOwnerAuth'] = true;
+			}
 			
 			return $this->view('profile/index' , $data);
 		}

@@ -29,7 +29,7 @@
 		public function portfolio()
 		{
 			$data = [
-				'title' => 'Our Porjects'
+				'title' => 'Our Projects'
 			];
 
 			return $this->view('pages/portfolio' , $data);

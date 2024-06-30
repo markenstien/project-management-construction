@@ -165,41 +165,11 @@
                                          </a>
                                      </div>
                                 </li>
-                                <li class="list-inline-item">
-                                    <div class="searchbar">
-                                        <form>
-                                            <div class="input-group">
-                                              <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-                                              <div class="input-group-append">
-                                                <button class="btn" type="submit" id="button-addon2">
-                                                    <img src="<?php echo _path_tmp('images/svg-icon/search.svg')?>" 
-                                                    class="img-fluid" alt="search"></button>
-                                              </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                         <div class="infobar">
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item">
-                                    <div class="notifybar">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle infobar-icon" href="#" role="button" id="notoficationlink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="<?php echo _path_tmp('images/svg-icon/notifications.svg')?>" class="img-fluid" alt="notifications">
-                                            <span class="live-icon"></span></a>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notoficationlink">
-                                                <div class="notification-dropdown-title">
-                                                    <h4>Notifications</h4>                            
-                                                </div>
-                                                <ul class="list-unstyled" id="notification_container">                                                    
-                                                    
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li> 
+                
                                 <li class="list-inline-item">
                                     <div class="profilebar">
                                         <div class="dropdown">

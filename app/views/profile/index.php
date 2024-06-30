@@ -10,6 +10,7 @@
 			<div class="card-body">
 				<?php Flash::show()?>
 				<ul class="list-group">
+					<?php if(!$isOwnerAuth) :?>
 					<li class="list-group-item">
 						First Name : <?php echo $user->first_name?>
 						<div>
@@ -22,18 +23,24 @@
 							<a href="<?php echo _route('user:editSingle',$user->id,['field' => 'last_name'])?>"><i class="feather icon-edit"></i>Edit</a>
 						</div>
 					</li>
-					<li class="list-group-item">
-						Email : <?php echo $user->email?>
-						<div>
-							<a href="<?php echo _route('user:editSingle',$user->id,['field' => 'email'])?>"><i class="feather icon-edit"></i>Edit</a>
-						</div>
-					</li>
-					<li class="list-group-item">
-						Phone : <?php echo $user->phone?>
-						<div>
-							<a href="<?php echo _route('user:editSingle',$user->id,['field' => 'phone'])?>"><i class="feather icon-edit"></i>Edit</a>
-						</div>
-					</li>
+					<?php endif?>
+					<?php if($isOwnerAuth) :?>
+						<li class="list-group-item">
+							Phone : <?php echo $user->phone?>
+							<div>
+								<a href="<?php echo _route('user:editSingle',$user->id,['field' => 'phone'])?>"><i class="feather icon-edit"></i>Edit</a>
+							</div>
+						</li>
+					<?php endif?>
+
+					<?php if($isOwnerAuth) :?>
+						<li class="list-group-item">
+							Email : <?php echo $user->email?>
+							<div>
+								<a href="<?php echo _route('user:editSingle',$user->id,['field' => 'email'])?>"><i class="feather icon-edit"></i>Edit</a>
+							</div>
+						</li>
+					<?php endif?>
 					<li class="list-group-item">
 						Password : ****
 						<div>
