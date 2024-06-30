@@ -44,7 +44,7 @@
         <h4 class="section-title">Why Choose us?</h4>
         <article>
             <p>
-                <?php echo COMPANY_NAME?>Prado and Sons Inc. is a leader in the design and production of high-performance
+                <?php echo COMPANY_NAME?> Prado and Sons Inc. is a leader in the design and production of high-performance
                 trucks. Our company prides itself on blending innovation with durability to create
                 vehicles that meet the diverse needs of our clients. With a strong commitment to
                 excellence, we ensure that each truck we produce upholds the highest standards of
