@@ -81,7 +81,8 @@
                 <div class="col">
                    <div class="footer-group">
                         <h3 class="footer-title"><?php echo COMPANY_NAME?></h3>
-                        <p>raw denim aesthetic synth nesciunt you probably City</p>
+                        <p>5 Banahaw, Novaliches, Quezon City, 1110 Metro Manila.
+                        Services</p>
                    </div>
 
                     <ul class="list-unstyled">
@@ -94,18 +95,8 @@
                 <div class="col">
                     <div class="footer-group">
                         <h3 class="footer-title">Services</h3>
-                        <p>. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of 
-                          them accusamus labore sustainable</p>
+                        <p>We build state of the art trucks and armored car specifically the way you want it.</p>
                     </div>
-                </div>
-
-                <div class="col">
-                    <h3 class="footer-title">References</h3>
-                    <ul class="list-unstyled">
-                        <li> <a href="#">Portfolio</a> </li>
-                        <li> <a href="#">Services</a> </li>
-                        <li> <a href="#">About</a> </li>
-                    </ul>
                 </div>
             </div>
         </div>
