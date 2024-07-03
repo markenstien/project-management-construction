@@ -10,7 +10,7 @@
 
       <div class="container">
           <div class="text-center justif" id="bannerHeading">
-              <h3 class="heading-text"><?php echo COMPANY_NAME?> <br/> Project Management Software</h3>
+              <h3 class="heading-text"><?php echo COMPANY_NAME?></h3>
               <!-- <a href="<?php echo _route('quote:projectClassification')?>" class="btn btn-primary">Get Free Quote</a> -->
           </div>
       </div>
@@ -23,11 +23,9 @@
         <div class="row">
             <article class="col-md-8">
                 <p>
-                Generate Lorem Ipsum placeholder text for use in your graphic, 
-                print and web layouts, and discover plugins for your favorite writing, design and blogging tools. E
-                xplore the origins, history and meanin
+                    Prado and Sons Industries is a
+                    leading global manufacturer of armored trucks and truck bodies in the Philippines.
                 </p>
-                <a href="#" class="btn btn-primary btn-sm">Tell me more</a>
             </article>
 
             <div class="col-md-4">
@@ -41,37 +39,25 @@
     <div class="container">
         <h4 class="section-title">Projects</h4>
 
-        <div class="row project">
-
+        <div class="row" id="projectItems">
             <div class="col-md-4">
-                <img src="<?php echo _path_upload_get('images_asset/IMG-7641.JPG')?>" style='width: 100%;'>
+                <img src="<?php echo _path_upload_get('images_asset/afp_pickup.png')?>" style='width: 100%;'>
             </div>
 
-            <article class="col-md-8">
-                <p>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
-                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Show Project</a>
-            </article>
-        </div>
-
-        <div class="row project">
-            <article class="col-md-8">
-                <p
-                >Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-                3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                 Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Show Project</a>
-            </article>
+            <div class="col-md-4">
+                <img src="<?php echo _path_upload_get('images_asset/afp_wagon.png')?>" style='width: 100%;'>
+            </div>
 
             <div class="col-md-4">
-                <img src="<?php echo _path_upload_get('images_asset/IMG-7639.JPG')?>" style='width: 100%;'>
+                <img src="<?php echo _path_upload_get('images_asset/dump_truck.png')?>" style='width: 100%;'>
+            </div>
+
+            <div class="col-md-4">
+                <img src="<?php echo _path_upload_get('images_asset/armored_car.jpg')?>" style='width: 100%;'>
+            </div>
+
+            <div class="col-md-4">
+                <img src="<?php echo _path_upload_get('images_asset/fire_truck.jpg')?>" style='width: 100%;'>
             </div>
         </div>
     </div>
@@ -231,6 +217,10 @@
         .partners-show-case .partners-logo img 
         {
             width: 100%;
+        }
+
+        #projectItems div{
+            margin-bottom: 30px;
         }
     </style>
 <?php endbuild()?>
