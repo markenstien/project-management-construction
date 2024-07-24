@@ -53,4 +53,13 @@
 
 			return $this->view('pages/contact' , $data);
 		}
+
+		public function bot() {
+			$data = [
+				'title' => 'Contact',
+				'page'  => 'contact'
+			];
+
+			return $this->view('pages/bot' , $data);
+		}
 	}

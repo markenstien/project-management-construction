@@ -65,6 +65,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo _route('sec:login')?>">Sign In</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo _route('landing:bot')?>">Talk to Us</a>
+              </li>
             </ul>
         </div>
       </div>

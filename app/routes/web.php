@@ -114,6 +114,7 @@
 		'services' => $controller.'/services',
 		'portfolio' => $controller.'/portfolio',
 		'contact' => $controller.'/contact',
+		'bot' => $controller.'/bot',
 	];
 
 	$controller = '/userController';
