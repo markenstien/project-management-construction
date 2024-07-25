@@ -24,7 +24,7 @@ use Mpdf\Shaper\Sea;
 					$this->file->uploadWithFolderCreate('files' ,[
 						'meta_id' => $res,
 						'meta_key' => 'PROJECT_TASK',
-						'folderName' => "TASK_PROGRESS{$post['current']}",
+						'folderName' => "TASK_PROGRESS_{$post['current']}",
 						'unique_key_identifier' => seal($post['project_id'])
 					]);
 				}
