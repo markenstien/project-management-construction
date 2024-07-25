@@ -60,7 +60,8 @@
 	                <?php
 						Form::open([
 							'method' => 'post',
-							'action' => _route('progress:create' , $project->id)
+							'action' => _route('progress:create' , $project->id),
+							'enctype' => 'multipart/form-data'
 						]);
 
 						Form::hidden('project_id' , $project->id);
@@ -98,6 +99,15 @@
 							Form::date('date' , today() , [
 								'class' => 'form-control',
 								'required' => ''
+							]);
+						?>
+					</div>
+
+					<div class="form-group">
+						<?php
+							Form::label('Attach File');
+							Form::file('files[]', [
+								'multiple' => true
 							]);
 						?>
 					</div>

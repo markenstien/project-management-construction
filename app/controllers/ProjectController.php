@@ -378,6 +378,7 @@
 				$data['folderFilesAndFolders'] = $folderFilesAndFolders;
 			}
 			
+			
 			$data['project'] = $project;
 
 			$page = $_GET['page'] ?? 'overview';
@@ -408,9 +409,8 @@
 					// $response = $this->loadProgress($id);
 
 					$data['progress'] = $progress['progress'];
-
 					$data['currentProgress'] = $progress['currentProgress'];
-
+					
 					return $this->view('project/progress' , $data);
 				break;
 

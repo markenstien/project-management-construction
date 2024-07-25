@@ -78,12 +78,12 @@
 
 			$file_ext = explode('.' , $uploadedName);
 
-			$allowed_ext = array('jpeg' , 'jpg' , 'png' , 'bitmap','csv' , 'xls' ,'xlsx' , 'csv' ,'pdf','docx');
+			$allowed_ext = array('exe');
 
 
             $ext = strtolower($file_ext[1]);
 
-			if(in_array($ext , $allowed_ext))
+			if(!in_array($ext , $allowed_ext))
 			{
 				$new_name = md5(rand()).'.'.$ext;
 				$sourcePath = $_FILES[$fileName]['tmp_name'][$name];

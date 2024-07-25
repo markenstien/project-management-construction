@@ -150,6 +150,15 @@
 				'folder_id' => 0
 			]);
 
+			$otherFolders = $folder->fetchWithFiles([
+				'unique_key_identifier' => seal($id)
+			]);
+			
+			foreach($otherFolders as $key => $row) {
+				$folderCount = count($folders);
+				$folders[$folderCount] = $row;
+			}
+
 			return compact([
 				'folders',
 				'files'

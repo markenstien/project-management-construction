@@ -110,7 +110,8 @@
 			$folderId = $folder->create([
 				'meta_id' => $metaId,
 				'meta_key' => $metaKey,
-				'folder' => $folderName
+				'folder' => $folderName,
+				'unique_key_identifier' => $parameters['unique_key_identifier'] ?? seal("{$metaId}{$metaKey}")
 			]);
 
 			if( !$folderId ){
