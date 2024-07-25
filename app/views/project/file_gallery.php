@@ -72,10 +72,14 @@
 						?>
 						<?php if( !isEqual( $ext , ['png','gif','jpeg' , 'jpg']) ) :?>
 							<div class="col-md-4 hover-show-delete mb-3">
-								<a href="<?php echo _download( $file->full_path , $file->display_name)?>">
-									<i class="feather icon-file-text" style="font-size: 70px;"></i>
-									<div><label><?php echo $file->display_name?></label></div>
-								</a>
+								<?php $downloadPath = _download($file->full_path , $file->display_name)?>
+
+								<?php if($downloadPath !== false) :?>
+									<a href="<?php echo _download( $file->full_path , $file->display_name)?>">
+										<i class="feather icon-file-text" style="font-size: 70px;"></i>
+										<div><label><?php echo $file->display_name?></label></div>
+									</a>
+								<?php endif?>
 
 								<div class="hidden-delete-button">
 									<a href="<?php echo _route('file:delete' , $file->id)?>" style="text-decoration: underline;">Delete</a>

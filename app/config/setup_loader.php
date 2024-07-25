@@ -13,7 +13,7 @@
             define('DBHOST' , 'localhost');
             define('DBUSER' , 'root');
             define('DBPASS' , '');
-            define('DBNAME' , 'th_projman');
+            define('DBNAME' , 'korpzpru_projman');
             define('BASECONTROLLER' , 'LandingController');
             define('BASEMETHOD' , 'index');
             ini_set('display_errors', 1);
