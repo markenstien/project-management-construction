@@ -86,7 +86,8 @@
 		$dPath = explode('.' , $downloadName);
 
 		if( !isEqual( end($dPath) , end($fPathExt) ) ){
-			return _page_fatal_error("Download Name extension does not match the full path extension");
+			return false;
+			// return _page_fatal_error("Download Name extension does not match the full path extension");
 		}
 
 		return _route('download:index' , [
