@@ -5,11 +5,11 @@
         </div>
         <div class="card-body">
             <iframe
-                src="https://www.chatbase.co/chatbot-iframe/6vP-nqNicCIlzJz_hjHhh"
+                src="https://www.chatbase.co/chatbot-iframe/Pc-9ou28HeTWYno8ictYF"
                 width="100%"
                 style="height: 100%; min-height: 700px"
                 frameborder="0"
-            ></iframe>
+                ></iframe>
         </div>
     </div>
 <?php endbuild()?>
