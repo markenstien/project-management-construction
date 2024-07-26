@@ -59,6 +59,10 @@
             <div class="col-md-4">
                 <img src="<?php echo _path_upload_get('images_asset/fire_truck.jpg')?>" style='width: 100%;'>
             </div>
+
+            <div class="col-md-4">
+                <img src="<?php echo _path_upload_get('images_asset/artista_van.png')?>" style='width:100%'>
+            </div>
         </div>
     </div>
 </section>
